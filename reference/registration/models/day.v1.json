@@ -10,7 +10,8 @@
       "$ref": "./periods.v1.json"
     },
     "editable": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "Whether or not this day can still be edited by the user."
     },
     "date": {
       "type": "string",
@@ -20,6 +21,7 @@
     }
   },
   "required": [
+    "editable",
     "date"
   ]
 }
