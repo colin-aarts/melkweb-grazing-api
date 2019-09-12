@@ -1,0 +1,23 @@
+{
+  "title": "Period",
+  "description": "Period data",
+  "type": "object",
+  "x-examples": {},
+  "properties": {
+    "startTime": {
+      "type": "string",
+      "description": "ISO date string",
+      "format": "time",
+      "example": "12:00"
+    },
+    "endTime": {
+      "type": "string",
+      "format": "time",
+      "example": "16:00"
+    }
+  },
+  "required": [
+    "startTime",
+    "endTime"
+  ]
+}

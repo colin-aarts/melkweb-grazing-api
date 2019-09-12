@@ -1,0 +1,25 @@
+{
+  "title": "Day",
+  "type": "object",
+  "description": "Registration data for a single date.",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "periods": {
+      "$ref": "./periods.v1.json"
+    },
+    "editable": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string",
+      "description": "ISO date",
+      "format": "date",
+      "example": "2019-09-11"
+    }
+  },
+  "required": [
+    "date"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Days",
+  "type": "array",
+  "items": {
+    "$ref": "./day.v1.json"
+  }
+}

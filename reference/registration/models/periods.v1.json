@@ -1,0 +1,8 @@
+{
+  "title": "Periods",
+  "type": "array",
+  "items": {
+    "$ref": "./period.v1.json"
+  },
+  "description": "List of periods"
+}

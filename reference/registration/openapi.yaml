@@ -1,0 +1,66 @@
+openapi: 3.0.0
+info:
+  title: Registration
+  version: '1.0'
+  description: Retrieve or update grazing registrations for authenticated user.
+  contact:
+    name: x
+    url: x
+    email: x@x.x
+  termsOfService: x
+  license:
+    name: x
+    url: x
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '/registration/days/{id}':
+    get:
+      summary: ''
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/days.v1.json
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: dateMin
+          description: Date range filter
+        - schema:
+            type: string
+          in: query
+          name: dateMax
+          description: Date range filter
+      description: Retrieve a list of registration days.
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+        description: Day id
+    delete:
+      summary: ''
+      responses:
+        '200':
+          description: OK
+      description: Delete a day registration
+    post:
+      summary: ''
+      responses:
+        '200':
+          description: OK
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./models/days.v1.json
+      description: Submit a list of registration day mutations or additions.
+components:
+  schemas: {}
+  securitySchemes: {}
