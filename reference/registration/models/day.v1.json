@@ -9,10 +9,6 @@
     "periods": {
       "$ref": "./periods.v1.json"
     },
-    "editable": {
-      "type": "boolean",
-      "description": "Whether or not this day can still be edited by the user."
-    },
     "date": {
       "type": "string",
       "description": "ISO date",
@@ -21,7 +17,6 @@
     }
   },
   "required": [
-    "editable",
     "date"
   ]
 }
