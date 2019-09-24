@@ -24,7 +24,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./models/days.v1.json
+                type: object
+                properties:
+                  meta:
+                    $ref: ./models/meta.v1.json
+                  days:
+                    $ref: ./models/days.v1.json
       parameters:
         - schema:
             type: string
