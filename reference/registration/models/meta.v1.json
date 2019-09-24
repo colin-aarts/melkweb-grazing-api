@@ -1,0 +1,17 @@
+{
+  "title": "Meta",
+  "type": "object",
+  "description": "Metadata for registration",
+  "properties": {
+    "mutableDateMin": {
+      "type": "string",
+      "description": "Oldest mutable date.",
+      "format": "date"
+    },
+    "mutableDateMax": {
+      "type": "string",
+      "description": "Newest mutable date.",
+      "format": "date"
+    }
+  }
+}
