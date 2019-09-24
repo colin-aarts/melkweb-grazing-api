@@ -6,14 +6,19 @@
     "id": {
       "type": "string"
     },
-    "periods": {
-      "$ref": "./periods.v1.json"
-    },
     "date": {
       "type": "string",
       "description": "ISO date",
       "format": "date",
       "example": "2019-09-11"
+    },
+    "noGrazing": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if explicitly regisitered as a no-grazing day."
+    },
+    "periods": {
+      "$ref": "./periods.v1.json"
     }
   },
   "required": [
