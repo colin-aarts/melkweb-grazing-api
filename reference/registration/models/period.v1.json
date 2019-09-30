@@ -14,6 +14,12 @@
       "type": "string",
       "format": "time",
       "example": "16:00"
+    },
+    "plot": {
+      "type": "string",
+      "description": "Required for certain statutes. Freeform (for now) plot descriptor.",
+      "example": "perceel 2, schubbekutterveenlaan",
+      "maxLength": 24
     }
   },
   "required": [
