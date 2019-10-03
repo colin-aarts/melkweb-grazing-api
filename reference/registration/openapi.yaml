@@ -14,7 +14,7 @@ info:
 servers:
   - url: 'http://localhost:3000'
 paths:
-  '/registration/days/{id}':
+  '/weidekalender/days/{id}':
     get:
       summary: ''
       tags: []

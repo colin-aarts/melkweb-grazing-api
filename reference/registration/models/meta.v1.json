@@ -12,6 +12,12 @@
       "type": "string",
       "description": "Newest mutable date.",
       "format": "date"
+    },
+    "registeredPlots": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     }
   }
 }
