@@ -15,6 +15,7 @@
     },
     "registeredPlots": {
       "type": "array",
+      "description": "List of registered plots",
       "items": {
         "type": "object",
         "properties": {
@@ -22,7 +23,8 @@
             "type": "string"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Freeform name"
           }
         },
         "required": [
@@ -31,5 +33,10 @@
         ]
       }
     }
-  }
+  },
+  "required": [
+    "mutableDateMin",
+    "mutableDateMax",
+    "registeredPlots"
+  ]
 }

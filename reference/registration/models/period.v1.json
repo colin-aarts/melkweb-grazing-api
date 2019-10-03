@@ -4,6 +4,9 @@
   "type": "object",
   "x-examples": {},
   "properties": {
+    "id": {
+      "type": "string"
+    },
     "startTime": {
       "type": "string",
       "description": "ISO date string",
@@ -23,7 +26,9 @@
     }
   },
   "required": [
+    "id",
     "startTime",
-    "endTime"
+    "endTime",
+    "plot"
   ]
 }

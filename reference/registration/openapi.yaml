@@ -14,7 +14,7 @@ info:
 servers:
   - url: 'http://localhost:3000'
 paths:
-  '/weidekalender/days/{id}':
+  /weidekalender/days:
     get:
       summary: ''
       tags: []
@@ -26,8 +26,6 @@ paths:
               schema:
                 type: object
                 properties:
-                  meta:
-                    $ref: ./models/meta.v1.json
                   days:
                     $ref: ./models/days.v1.json
       parameters:
@@ -41,14 +39,12 @@ paths:
           in: query
           name: dateMax
           description: Date range filter
+        - schema:
+            type: string
+          in: query
+          name: companyId
       description: Retrieve a list of registration days.
-    parameters:
-      - schema:
-          type: string
-        name: id
-        in: path
-        required: true
-        description: Day id
+    parameters: []
     post:
       summary: ''
       responses:
