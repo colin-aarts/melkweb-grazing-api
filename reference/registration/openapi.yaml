@@ -56,17 +56,18 @@ paths:
             schema:
               $ref: ./models/days.v1.json
       description: Submit a list of registration day mutations or additions.
-  /weidekalender/meta:
+  /weidekalender/status:
     get:
       summary: Your GET endpoint
       tags: []
       responses: {}
-      description: Metadata for a registration
+      description: Retrieve status details for registration
       requestBody:
         content:
           application/json:
             schema:
               $ref: ./models/meta.v1.json
+    parameters: []
 components:
   schemas: {}
   securitySchemes: {}
