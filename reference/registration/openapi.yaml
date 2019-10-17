@@ -62,10 +62,7 @@ paths:
           application/json:
             schema:
               $ref: ./models/meta.v1.json
-      parameters:
-        - schema:
-            type: string
-          in: header
+      parameters: []
     parameters: []
 components:
   schemas: {}
