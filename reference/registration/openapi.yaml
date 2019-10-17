@@ -75,7 +75,7 @@ components:
       in: header
       description: ''
       name: Access token
-    FC-Grazing-API-Key:
+    FC-API-Key:
       type: apiKey
       in: header
       name: API key
