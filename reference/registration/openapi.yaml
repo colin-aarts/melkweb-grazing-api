@@ -95,3 +95,7 @@ components:
       name: Member number
       type: apiKey
       in: header
+    companyNumber:
+      name: Company number
+      type: apiKey
+      in: query
