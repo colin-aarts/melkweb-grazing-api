@@ -81,4 +81,17 @@ paths:
     parameters: []
 components:
   schemas: {}
-  securitySchemes: {}
+  securitySchemes:
+    FC-Access-Token:
+      type: apiKey
+      in: header
+      description: ''
+      name: Access token
+    FC-Grazing-API-Key:
+      type: apiKey
+      in: header
+      name: API key
+    FC-Member-Number:
+      name: Member number
+      type: apiKey
+      in: header
