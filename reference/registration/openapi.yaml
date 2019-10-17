@@ -11,10 +11,9 @@ info:
   license:
     name: x
     url: x
-servers:
-  - url: 'http://localhost:3000'
+servers: []
 paths:
-  /weidekalender/days:
+  /grazing/days:
     get:
       summary: ''
       tags: []
@@ -40,9 +39,17 @@ paths:
           name: dateMax
           description: Date range filter
         - schema:
-            type: string
+            type: number
           in: query
-          name: companyId
+          name: companyNumber
+          description: ''
+          required: true
+        - schema:
+            type: string
+          in: header
+          name: FC-Access-Token
+          description: Access token
+          required: true
       description: Retrieve a list of registration days.
     parameters: []
     post:
@@ -56,9 +63,9 @@ paths:
             schema:
               $ref: ./models/days.v1.json
       description: Submit a list of registration day mutations or additions.
-  /weidekalender/status:
+  /grazing/status:
     get:
-      summary: Your GET endpoint
+      summary: null
       tags: []
       responses: {}
       description: Retrieve status details for registration
@@ -67,6 +74,10 @@ paths:
           application/json:
             schema:
               $ref: ./models/meta.v1.json
+      parameters:
+        - schema:
+            type: string
+          in: header
     parameters: []
 components:
   schemas: {}
